@@ -1,4 +1,9 @@
 /**
+ * Default camera update interval in milliseconds
+ */
+export const DEFAULT_CAMERA_REFRESH_RATE = 1000;
+
+/**
  * Default configuration for the PrintWatch card
  */
 export const DEFAULT_CONFIG = {
@@ -28,10 +33,6 @@ export const DEFAULT_CONFIG = {
   chamber_light_entity: 'light.p1s_01p00a382500072_chamber_light',
   online_entity: 'binary_sensor.p1s_01p00a382500072_online',
   print_weight_entity: 'sensor.p1s_print_weight',
-  print_length_entity: 'sensor.p1s_print_length'
+  print_length_entity: 'sensor.p1s_print_length',
+  camera_refresh_rate: DEFAULT_CAMERA_REFRESH_RATE
 };
-
-/**
- * Default camera update interval in milliseconds
- */
-export const DEFAULT_CAMERA_REFRESH_RATE = 1000;

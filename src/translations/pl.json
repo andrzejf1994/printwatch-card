@@ -1,0 +1,121 @@
+{
+  "entity": {
+    "sensor": {
+      "state": {
+        "idle": "Bezczynny",
+        "printing": "Drukuje",
+        "paused": "Wstrzymano",
+        "complete": "Zakończono",
+        "offline": "Offline",
+        "unknown": "Nieznany",
+        "running": "W toku",
+        "finish": "Ukończono"
+      }
+    }
+  },
+  "ui": {
+    "card": {
+      "printwatch": {
+        "not_printing": "Aktualnie brak wydruku",
+        "last_print": "Ostatni wydruk: {name}",
+        "printer_offline": "Drukarka offline",
+        "camera_unavailable": "Kamera niedostępna",
+        "time": {
+          "complete": "Zakończono",
+          "left": "Pozostało",
+          "hours": "g",
+          "minutes": "m"
+        },
+        "print": {
+          "layer": "Warstwa",
+          "progress": "Postęp",
+          "weight": "Waga",
+          "length": "Długość"
+        },
+        "temperatures": {
+          "bed": "Stół",
+          "nozzle": "Dysza",
+          "speed": "Prędkość",
+          "bed_target": "Ustaw temperaturę stołu",
+          "nozzle_target": "Ustaw temperaturę dyszy",
+          "speed_profile": "Ustaw prędkość druku",
+          "range": "Zakres: {min}°C - {max}°C"
+        },
+        "controls": {
+          "pause": "Wstrzymaj",
+          "resume": "Wznów",
+          "stop": "Zatrzymaj",
+          "cancel": "Anuluj",
+          "save": "Zapisz"
+        },
+        "speed_profiles": {
+          "silent": "Cichy",
+          "standard": "Standardowy",
+          "sport": "Sportowy",
+          "ludicrous": "Ekstremalny"
+        },
+        "dialogs": {
+          "pause": {
+            "title": "Potwierdź wstrzymanie",
+            "message": "Czy na pewno chcesz wstrzymać bieżący wydruk? Może to wpłynąć na jakość wydruku.",
+            "confirm": "Potwierdź"
+          },
+          "stop": {
+            "title": "Potwierdź zatrzymanie",
+            "message": "Czy na pewno chcesz zatrzymać bieżący wydruk? Tej operacji nie można cofnąć.",
+            "confirm": "Zatrzymaj wydruk"
+          }
+        },
+        "materials": {
+          "empty": "Pusty",
+          "unknown": "Nieznany",
+          "external_spool": "Zewnętrzna szpula"
+        },
+        "config": {
+          "sections": {
+            "general": "Ogólne",
+            "status": "Encje statusu druku",
+            "temperatures": "Encje temperatury",
+            "controls": "Encje sterowania",
+            "camera": "Kamera",
+            "materials": "Materiały i AMS",
+            "optional": "Opcjonalne czujniki"
+          },
+          "fields": {
+            "printer_name": "Nazwa drukarki",
+            "print_status_entity": "Encja statusu druku",
+            "current_stage_entity": "Encja bieżącego etapu",
+            "task_name_entity": "Encja nazwy zadania",
+            "progress_entity": "Encja postępu",
+            "current_layer_entity": "Encja bieżącej warstwy",
+            "total_layers_entity": "Encja łącznej liczby warstw",
+            "remaining_time_entity": "Encja pozostałego czasu",
+            "active_tray_index_entity": "Encja aktywnego podajnika",
+            "bed_temp_entity": "Encja temperatury stołu",
+            "nozzle_temp_entity": "Encja temperatury dyszy",
+            "bed_target_temp_entity": "Encja docelowej temperatury stołu",
+            "nozzle_target_temp_entity": "Encja docelowej temperatury dyszy",
+            "speed_profile_entity": "Encja profilu prędkości",
+            "pause_button_entity": "Encja przycisku wstrzymania",
+            "resume_button_entity": "Encja przycisku wznowienia",
+            "stop_button_entity": "Encja przycisku zatrzymania",
+            "chamber_light_entity": "Encja oświetlenia komory",
+            "aux_fan_entity": "Encja wentylatora pomocniczego",
+            "camera_entity": "Encja kamery",
+            "cover_image_entity": "Encja obrazu podglądu",
+            "camera_refresh_rate": "Częstotliwość odświeżania kamery",
+            "online_entity": "Encja statusu online",
+            "print_weight_entity": "Encja wagi wydruku",
+            "print_length_entity": "Encja długości wydruku",
+            "external_spool_entity": "Encja zewnętrznej szpuli",
+            "ams_slot": "Encja gniazda AMS {number}"
+          },
+          "helpers": {
+            "camera_refresh_rate": "Interwał w milisekundach między odświeżeniami kamery.",
+            "external_spool_entity": "Wybierz encję reprezentującą zewnętrzną szpulę, jeśli jest dostępna."
+          }
+        }
+      }
+    }
+  }
+}
