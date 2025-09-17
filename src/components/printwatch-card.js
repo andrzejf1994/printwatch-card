@@ -5,6 +5,7 @@ import { cardStyles } from '../styles/card-styles';
 import { formatDuration, formatEndTime } from '../utils/formatters';
 import { isPrinting, isPaused, getAmsSlots, getEntityStates } from '../utils/state-helpers';
 import { DEFAULT_CONFIG, DEFAULT_CAMERA_REFRESH_RATE } from '../constants/config';
+import './printwatch-card-editor.js';
 import { localize } from '../utils/localize';
 
 class PrintWatchCard extends LitElement {
@@ -37,12 +38,22 @@ class PrintWatchCard extends LitElement {
     };
   }
 
+  static getConfigElement() {
+    return document.createElement('printwatch-card-editor');
+  }
+
+  static getStubConfig() {
+    return { ...DEFAULT_CONFIG };
+  }
+
   setConfig(config) {
-    if (!config.printer_name) {
+    const mergedConfig = { ...DEFAULT_CONFIG, ...config };
+    if (!mergedConfig.printer_name) {
       throw new Error('Please define printer_name');
     }
-    this.config = { ...DEFAULT_CONFIG, ...config };
-    this._cameraUpdateInterval = config.camera_refresh_rate || DEFAULT_CAMERA_REFRESH_RATE;
+    this.config = mergedConfig;
+    this._cameraUpdateInterval =
+      mergedConfig.camera_refresh_rate ?? DEFAULT_CAMERA_REFRESH_RATE;
   }
 
   isOnline() {

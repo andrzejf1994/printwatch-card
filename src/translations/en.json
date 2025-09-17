@@ -70,6 +70,50 @@
           "empty": "Empty",
           "unknown": "Unknown",
           "external_spool": "External Spool"
+        },
+        "config": {
+          "sections": {
+            "general": "General",
+            "status": "Print status entities",
+            "temperatures": "Temperature entities",
+            "controls": "Control entities",
+            "camera": "Camera",
+            "materials": "Materials & AMS",
+            "optional": "Optional sensors"
+          },
+          "fields": {
+            "printer_name": "Printer name",
+            "print_status_entity": "Print status entity",
+            "current_stage_entity": "Current stage entity",
+            "task_name_entity": "Task name entity",
+            "progress_entity": "Progress entity",
+            "current_layer_entity": "Current layer entity",
+            "total_layers_entity": "Total layers entity",
+            "remaining_time_entity": "Remaining time entity",
+            "active_tray_index_entity": "Active tray index entity",
+            "bed_temp_entity": "Bed temperature entity",
+            "nozzle_temp_entity": "Nozzle temperature entity",
+            "bed_target_temp_entity": "Bed target temperature entity",
+            "nozzle_target_temp_entity": "Nozzle target temperature entity",
+            "speed_profile_entity": "Speed profile entity",
+            "pause_button_entity": "Pause button entity",
+            "resume_button_entity": "Resume button entity",
+            "stop_button_entity": "Stop button entity",
+            "chamber_light_entity": "Chamber light entity",
+            "aux_fan_entity": "Auxiliary fan entity",
+            "camera_entity": "Camera entity",
+            "cover_image_entity": "Preview image entity",
+            "camera_refresh_rate": "Camera refresh rate",
+            "online_entity": "Online status entity",
+            "print_weight_entity": "Print weight entity",
+            "print_length_entity": "Print length entity",
+            "external_spool_entity": "External spool entity",
+            "ams_slot": "AMS slot {number} entity"
+          },
+          "helpers": {
+            "camera_refresh_rate": "Interval in milliseconds between camera refreshes.",
+            "external_spool_entity": "Select the entity that represents your external spool, if available."
+          }
         }
       }
     }

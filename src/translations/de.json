@@ -58,6 +58,50 @@
           "empty": "Leer",
           "unknown": "Unbekannt",
           "external_spool": "Externe Spule"
+        },
+        "config": {
+          "sections": {
+            "general": "Allgemein",
+            "status": "Status-Entitäten",
+            "temperatures": "Temperatur-Entitäten",
+            "controls": "Steuerungen",
+            "camera": "Kamera",
+            "materials": "Materialien & AMS",
+            "optional": "Optionale Sensoren"
+          },
+          "fields": {
+            "printer_name": "Druckername",
+            "print_status_entity": "Entität Druckstatus",
+            "current_stage_entity": "Entität aktueller Schritt",
+            "task_name_entity": "Entität Auftragsname",
+            "progress_entity": "Entität Fortschritt",
+            "current_layer_entity": "Entität aktuelle Schicht",
+            "total_layers_entity": "Entität Gesamtschichten",
+            "remaining_time_entity": "Entität verbleibende Zeit",
+            "active_tray_index_entity": "Entität aktives Fach",
+            "bed_temp_entity": "Entität Betttemperatur",
+            "nozzle_temp_entity": "Entität Düsentemperatur",
+            "bed_target_temp_entity": "Entität Ziel-Betttemperatur",
+            "nozzle_target_temp_entity": "Entität Ziel-Düsentemperatur",
+            "speed_profile_entity": "Entität Geschwindigkeitsprofil",
+            "pause_button_entity": "Entität Pause-Taste",
+            "resume_button_entity": "Entität Fortsetzen-Taste",
+            "stop_button_entity": "Entität Stopp-Taste",
+            "chamber_light_entity": "Entität Kammerlicht",
+            "aux_fan_entity": "Entität Zusatzlüfter",
+            "camera_entity": "Kamera-Entität",
+            "cover_image_entity": "Entität Vorschaubild",
+            "camera_refresh_rate": "Kamera-Aktualisierungsrate",
+            "online_entity": "Entität Online-Status",
+            "print_weight_entity": "Entität Druckgewicht",
+            "print_length_entity": "Entität Drucklänge",
+            "external_spool_entity": "Entität externe Spule",
+            "ams_slot": "AMS-Slot {number}-Entität"
+          },
+          "helpers": {
+            "camera_refresh_rate": "Intervall in Millisekunden zwischen Kameraaktualisierungen.",
+            "external_spool_entity": "Wählen Sie die Entität der externen Spule, falls vorhanden."
+          }
         }
       }
     }

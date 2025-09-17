@@ -174,6 +174,8 @@ export const localize = new Localize();
 // Load default translations
 import * as en from '../translations/en.json';
 import * as de from '../translations/de.json';
+import * as pl from '../translations/pl.json';
 
 localize.loadTranslations('en', en.default || en);
 localize.loadTranslations('de', de.default || de);
+localize.loadTranslations('pl', pl.default || pl);
